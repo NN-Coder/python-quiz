@@ -1,0 +1,87 @@
+#IMPORTANT NOTE!: Python Master and Albert Python are not real.
+
+print("Welcome to the python 4-question-quiz!\n")
+print("The quiz is now starting...\n")
+
+#QUESTION 1
+def question_1 () :
+    print("Question 1:")
+    print("What does IDLE stand for?")
+    print("(Type a, b, c, or d)\n")
+    
+    print("a. Integrated Development and Learning Environment")
+    print("b. Integrated DeveLopment Environment")
+    print("c. Inter-Dynamic Loop Ecosystem")
+    print("d. Integer Deposition Loop Economy\n")
+    
+question_1 ()
+
+answer1 = input("Answer: ")
+
+#QUESTION 2
+def question_2 ():
+    print("Question 2:")
+    print("What symbol(s) or words do you use to assign something to a variable?")
+    print("(Type a, b, c, or d)\n")
+
+    print("a. == ")
+    print("b. % ")
+    print("c. = ")
+    print("d. assign()\n ")
+
+question_2 ()
+
+answer2 = input("Answer: ")
+
+def question_3 () :
+    print("Question 3:")
+    print("Where do users input info in python programs?")
+    print("(Type a, b, c, or d)\n")
+
+    print("a. Python File ")
+    print("b. Python Shell ")
+    print("c. The Turtle Module ")
+    print("d. Sea Shell \n")
+
+question_3 ()
+
+answer3 = input("Answer: ")
+
+def question_4 () :
+    print("This is the final question, good luck! :)\n")
+    print("Question 4:")
+    print("Where did python get it's name?")
+    print("(Type a, b, c, or d)\n")
+
+    print('''a. It was named after "Monty Python's Flying Circus BBC comedy
+series''')
+    print("b. It was named the snake, python ")
+    print("c. It was named after Albert Python ")
+    print("d. It was named after the video game, Python Master\n")
+
+question_4 ()
+
+answer4  = input("Answer: ")
+
+if answer1 == 'a' and answer2 == 'c' and answer3 == 'b' and answer4 == 'a':
+                print("You got 4/4 questions correct on the quiz, Congrats!!")
+else:
+    print("Sadly, you got a question wrong... Do you want another chance?")
+    chance_2 = input()
+
+    if chance_2 =='yes':
+        question_1 ()
+        answer1b = input("Answer: ")
+        question_2 ()
+        answer2b = input("Answer: ")
+        question_3 ()
+        answer3b = input("Answer: ")
+        question_4 ()
+        answer4b = input("Answer: ")
+
+        if answer1b == 'a' and answer2b == 'c' and answer3b == 'b' and answer4b == 'a':
+                print("You got 4/4 questions correct on the quiz, Congrats!!")
+
+        
+    else:
+        print("OK, Goodbye! )")
